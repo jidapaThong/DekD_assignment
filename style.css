@@ -1,0 +1,55 @@
+* {box-sizing:border-box}
+
+.slider-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/*hide images by default*/
+.slider{
+    display: none;
+}
+
+/* Next and previous arrows */
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    color: black;
+    background-color: aliceblue;
+    padding: 8px 18px;
+    font-size: 50px;
+    font-weight: bold;
+    width: auto;
+    transition: 0.3s ease;
+    user-select: none;
+}
+
+/* shift position of next arrow to right */
+.next{
+    right: 0px;
+}
+
+/* when click arrows, background of arrows change to grey */
+.prev:hover, .next:hover{
+    background-color: grey;
+}
+
+/*The dots*/
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(152, 223, 249);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover{
+background-color: grey;
+}
+  
+

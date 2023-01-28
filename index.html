@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>Slider preview</h1>
+    <div class="slider-container">
+        <div class="slider">
+            <img src="img/img1.JPG" style="width:100%">
+        </div>
+        <div class="slider">
+            <img src="img/img2.JPG" style="width:100%">
+        </div>
+        <div class="slider">
+            <img src="img/img3.JPG" style="width:100%">
+        </div>
+        <div class="slider">
+            <img src="img/img4.JPG" style="width:100%">
+        </div>    
+        
+        <!-- Next and previous arrows -->
+        <span class="next" onclick="controller(1)">&#10095;</span>
+        <span class="prev" onclick="controller(-1)">&#10094;</span>     
+    </div> 
+
+    <!-- The dots under slider -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
